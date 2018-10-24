@@ -1,0 +1,22 @@
+Tentative title: 200 words
+Other title ideas:
+* Stories with friends
+* ...
+* ...
+* ...
+
+Explanation:This game relies upon input from one or multiple users in order to create novel stories of 500 words.
+
+Platform: This is a browser based game/that later on can be implemented as an app or even a Facebook game.
+
+Gameplay: the player inputs x amount of words (10 for now). Potentially we could give the users the choice of how many words they want to fill in. Range (1-100?)
+
+The users are provided with a prompt that they then collaborate on to make a story.
+
+Functionality:The user is given a specific input text color that designates their contribution to the story. The user inputs their sentence into the text input field. The response is logged and then disappears. The text from the previous sentence reappears above a new cleared input field, where the user(or a user on a different computer/device) can provide their own 10 word response. 
+
+A word limit is displayed on the screen that lowers based on the amount of words provided. Potentially the header that displays the name ‘200 words’ could lower each time a new sentence is created. The amount of words logged This could be done by writing a check statement that loops through the sentence and counts the number of unique words (a string that is proceeded and followed by a space)
+
+Users have the choice to play together on one screen, or through multiple screens on the website.
+
+Users are either paired with friends or can choose to play randomly with up to 3 other people. Something fun could be to have massive collaborative story ‘events’ where 100s of users participate together and see what story they create. 

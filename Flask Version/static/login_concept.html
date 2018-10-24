@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form Test Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='main.css')}}"/> -->
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js')}}"></script>
+
+
+    <style>
+
+        * {
+            font-family: 'Roboto Slab', serif;
+            /* outline: 1px solid green; */
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+        }
+
+        body{
+            width:100%;
+            height:100%;
+        }
+
+        .header{
+            width:100%;
+            background-color: rgba(255, 255, 255, 0.973);
+            color:rgb(43, 42, 42);
+            padding:20px;
+            width:100%;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header h3{
+            padding-top: 8px;
+        }
+
+        .nav_bar{
+            float:right;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color:rgb(43, 42, 42);
+            text-align: center;
+            padding: 10px 16px;
+            border-radius: 3px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: rgb(236, 235, 235);
+        }
+
+        .active {
+            background-color: rgb(87, 135, 190);
+        }
+
+        .central_container{
+            width:100%;
+            height:900px;
+            background-color: rgb(233, 233, 233);
+            padding-top: 100px;
+            margin:auto;
+        }
+
+        .form_contain{
+            width:50%;
+            margin:60px auto;
+            background-color: white;
+            padding:60px;
+            border-radius: 2px;
+            box-shadow: 0px 0px 20px rgb(202, 202, 202);
+        }
+
+        .form_contain h3{
+            text-align: center;
+            font-size: 35px;
+            padding-bottom: 30px;
+            color:rgb(43, 42, 42);
+        }
+
+        form{
+            display: block;
+            margin:auto;
+            
+        }
+
+        input{
+            display: block;
+            width:100%;
+            padding:15px;
+            margin:20px auto;
+            border-radius: 3px;
+            border:1px solid rgb(153, 153, 153);
+            font-size: 15px;
+        }
+
+        select{
+            margin: 10px;
+            width:100%;
+        }
+
+        .submit_button{
+            display:block;
+            width:80%;
+            height:50px;
+            margin:40px auto 40px auto;
+            background-color: rgb(112, 189, 141);
+            color:white;
+            border:none;
+            border-radius: 30px;
+            outline:none;
+            font-size: 18px;
+        }
+
+        .facebook_button{
+            display:block;
+            width:100%;
+            height:50px;
+            margin:40px auto 40px auto;
+            background-color:  #4460a0;
+            color:white;
+            border:none;
+            outline:none;
+            font-size: 18px;
+            padding:15px;
+            margin:20px auto;
+            border-radius: 3px;
+        }
+
+        .submit_button:hover{
+            background-color:  rgb(119, 153, 190);
+        }
+        p{
+            text-align: center;
+            color:rgb(88, 88, 88);
+            font-size: 14px;
+            font-weight: lighter;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h3>Stories to Share</h3>
+            
+            <div class="nav_bar">
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="">Write</a></li>
+                    <li><a href="">Explore</a></li>
+                    <li><a href="">Profile</a></li>
+                    <li><a href="/login.html">Login</a></li>
+                </ul>
+            
+                </div>
+              </div>
+
+    <div class="central_container">
+
+        <div class="form_contain">
+                <h3>User Registration</h3>
+
+                <form action="/users" method="post">
+                    <input type="text" name='name' placeholder="Name">
+                    <input type="text" name='username' placeholder="Username">
+                    <input type="text" name='email' placeholder="Email">
+                    <input type="password" name='password' placeholder="Password">
+                    <input class="submit_button" type="submit" value = 'create user'>
+                </form>
+
+                <p>OR</p>
+                
+                <input class="facebook_button" type="submit" value = 'Continue with Facebook'>
+
+        </div>
+    </div>
+
+</body>
+</html>
